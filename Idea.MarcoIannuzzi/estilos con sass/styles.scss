@@ -1,0 +1,204 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(90deg, #f55e06b2, #8c6c56 );
+   
+    header {
+        background: linear-gradient(90deg, #f55e06b2, #8c7756 );
+        position: fixed;
+        top: 0%;
+        width: 100vw;
+        border-bottom: 2px solid brown;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        z-index: 1;
+        grid-area: header;
+    }     
+        header img {
+            width: 65px;
+            border: 2px solid rgba(119, 69, 11, 0.808);
+            border-radius: 35%;
+            margin: 2px;
+            margin-left: 35px;
+        }
+
+        nav {
+        margin-right: 20px;
+            ul {
+                display: grid;
+                grid-template-columns: 15% 25% 20% 20% 20%;
+                padding-top: 12px;
+                li {
+                    list-style: none; 
+                    a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: black;
+                        font-family: 'Roboto', sans-serif; 
+                        transition: 1s;
+                        &:hover{
+                            color: rgb(104, 24, 24);
+                            font-size: 20px;
+                            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+                        }
+                    }
+                }
+            }
+        }   
+}
+
+.index_body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main    main    main"
+    "footer footer footer";
+}
+
+main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    div.slideFotos{
+        margin: 0 auto;
+        border: 5px inset brown;
+        &:hover{
+            border: 5px inset chocolate;
+        }
+        .carousel{
+            width: 55vw;
+            height: 70vh;
+        }
+        .carousel-item img{
+            width: 55vw;
+            height: 70vh;
+        }
+    }
+    
+    div{
+         h1 {
+        justify-content: center;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 65px;
+        color: rgba(39, 14, 3, 0.87);
+        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+    }
+         h2 {
+        padding: 20px;
+        margin-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: 15px;
+        color: rgb(39, 14, 3);
+        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+    }
+        p {
+        margin-top: 30px;
+        font-family: cursive;
+        padding: 55px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        font-weight: bolder;
+        color: rgba(41, 14, 3, 0.753);
+        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+    }
+}
+}
+
+.titulosMain {
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 3px solid black ;
+    padding: 20px;
+    margin-top: 30px;
+    grid-area: footer;
+    div{
+        img {
+        border: 2px solid rgb(39, 14, 3);
+        border-radius: 35%;
+        margin: 20px 10px 10px 10px; 
+        }
+        h5 {
+            font-family: 'Roboto', sans-serif; 
+            font-size: 20px;
+            color: rgb(31, 10, 1);
+            text-shadow: rgba(194, 108, 9, 0.404) 2px 2px;
+        }
+        p{
+            font-weight: bolder;
+        }
+    }
+}
+
+.footerText {
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Hasta este punto esta aplicado CSS al index.html y comparte el mismo formato con el resto de las paginas en cuanto al header, footer y fondo del body.*/
+
+/* estilo de pagina "sobre nosotros"*/
+
+.snbody{
+    display: grid;
+    grid-template-areas: 
+    "snheader snheader snheader "
+    "snsection snsection snsection"
+    "snfooter snfooter snfooter";
+    .snheader {
+        grid-area: snheader;
+
+    }
+
+    .snsection {
+        grid-area: snsection;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 90px;
+        h1 {
+            display: inline-block;
+            justify-content: center;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 58px;
+            color: rgba(39, 14, 3, 0.87);
+            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+            transition: 1s;
+            &:hover{
+                color: rgba(102, 43, 18, 0.945);
+                font-size: 60px;
+            }
+        }
+        iframe {
+            width: 60vw;
+            height: 75vh;
+        }
+    }
+
+    .snfooter {
+        grid-area: snfooter;
+
+    }
+
+}
+
+
+
+

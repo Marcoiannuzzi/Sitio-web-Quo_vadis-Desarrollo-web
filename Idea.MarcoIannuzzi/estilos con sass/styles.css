@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#f55e06b2), to(#8c6c56));
+  background: linear-gradient(90deg, #f55e06b2, #8c6c56);
+}
+
+body header {
+  background: -webkit-gradient(linear, left top, right top, from(#f55e06b2), to(#8c7756));
+  background: linear-gradient(90deg, #f55e06b2, #8c7756);
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  border-bottom: 2px solid brown;
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: 50% 50%;
+  z-index: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+body header img {
+  width: 65px;
+  border: 2px solid rgba(119, 69, 11, 0.808);
+  border-radius: 35%;
+  margin: 2px;
+  margin-left: 35px;
+}
+
+body nav {
+  margin-right: 20px;
+}
+
+body nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 25% 20% 20% 20%;
+      grid-template-columns: 15% 25% 20% 20% 20%;
+  padding-top: 12px;
+}
+
+body nav ul li {
+  list-style: none;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body nav ul li a:hover {
+  color: #681818;
+  font-size: 20px;
+  text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+}
+
+.index_body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "main    main    main" "footer footer footer";
+}
+
+main {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+}
+
+main div.slideFotos {
+  margin: 0 auto;
+  border: 5px inset brown;
+}
+
+main div.slideFotos:hover {
+  border: 5px inset chocolate;
+}
+
+main div.slideFotos .carousel {
+  width: 55vw;
+  height: 70vh;
+}
+
+main div.slideFotos .carousel-item img {
+  width: 55vw;
+  height: 70vh;
+}
+
+main div h1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  color: rgba(39, 14, 3, 0.87);
+  text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+}
+
+main div h2 {
+  padding: 20px;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 15px;
+  color: #270e03;
+  text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+}
+
+main div p {
+  margin-top: 30px;
+  font-family: cursive;
+  padding: 55px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  color: rgba(41, 14, 3, 0.753);
+  text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+}
+
+.titulosMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 3px solid black;
+  padding: 20px;
+  margin-top: 30px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+footer div img {
+  border: 2px solid #270e03;
+  border-radius: 35%;
+  margin: 20px 10px 10px 10px;
+}
+
+footer div h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #1f0a01;
+  text-shadow: rgba(194, 108, 9, 0.404) 2px 2px;
+}
+
+footer div p {
+  font-weight: bolder;
+}
+
+.footerText {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+/* Hasta este punto esta aplicado CSS al index.html y comparte el mismo formato con el resto de las paginas en cuanto al header, footer y fondo del body.*/
+/* estilo de pagina "sobre nosotros"*/
+.snbody {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "snheader snheader snheader " "snsection snsection snsection" "snfooter snfooter snfooter";
+}
+
+.snbody .snheader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: snheader;
+}
+
+.snbody .snsection {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: snsection;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 90px;
+}
+
+.snbody .snsection h1 {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 58px;
+  color: rgba(39, 14, 3, 0.87);
+  text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.snbody .snsection h1:hover {
+  color: rgba(102, 43, 18, 0.945);
+  font-size: 60px;
+}
+
+.snbody .snsection iframe {
+  width: 60vw;
+  height: 75vh;
+}
+
+.snbody .snfooter {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: snfooter;
+}
+/*# sourceMappingURL=styles.css.map */
