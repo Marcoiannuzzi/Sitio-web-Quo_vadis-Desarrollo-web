@@ -139,9 +139,9 @@ footer{
 .snbody{
     display: grid;
     grid-template-areas: 
-    "snheader snheader snheader "
-    "snsection snsection snsection"
-    "snfooter snfooter snfooter";
+    "snheader snheader "
+    "snsection snsection"
+    "snfooter snfooter ";
 }
 
 .snheader {
@@ -231,9 +231,9 @@ section {
 .pbody {
     display: grid;
     grid-template-areas: 
-    "pheader pheader pheader"
-    "psection psection psection"
-    "pfooter pfooter pfooter";
+    "pheader pheader"
+    "psection psection"
+    "pfooter pfooter";
 }
 
 .pheader {
@@ -302,9 +302,9 @@ section {
 .mbody {
     display: grid;
     grid-template-areas:
-    "mheader mheader mheader"
-    "msection msection msection"
-    "mfooter mfooter mfooter";
+    "mheader mheader"
+    "msection msection"
+    "mfooter mfooter";
 }
 
 .mheader{
