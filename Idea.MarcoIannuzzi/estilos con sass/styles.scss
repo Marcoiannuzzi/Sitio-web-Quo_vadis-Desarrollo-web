@@ -24,7 +24,7 @@ header {
     background: linear-gradient(90deg, #f55e06b2, #8c7756 );
     position: fixed;
     top: 0%;
-    width: 100vw;
+    width: 100%;
     border-bottom: 2px solid brown;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -34,8 +34,7 @@ header {
         width: 65px;
         border: 2px solid rgba(119, 69, 11, 0.808);
         border-radius: 35%;
-        margin: 2px;
-        margin-left: 35px;
+        margin-left: 30px;
     }
 
     nav {
@@ -122,12 +121,13 @@ footer{
         }
         h5 {
             font-family: 'Roboto', sans-serif; 
-            font-size: 20px;
+            font-size: 18px;
             color: rgb(31, 10, 1);
             text-shadow: $textshadow;
         }
         p{
             font-weight: bolder;
+            font-size: 12px;
         }
 
     }
@@ -199,7 +199,7 @@ section {
     }
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
+        font-size: 15px;
         color: rgb(39, 14, 3);
         text-shadow: rgba(194, 108, 9, 0.404)5px 8px;
         font-weight: bolder;
@@ -266,7 +266,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 500px;
+        width: 450px;
         height: 350px;
         h3{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -292,7 +292,7 @@ section {
     }   
         .imgProductos {
             margin-top: 50px;
-            width: 350px;
+            width: 300px;
             padding: 10px;
             border: 5px inset brown;
             border-radius: 10%;
@@ -389,8 +389,6 @@ section {
     display: flex;
     justify-content: center;
     fieldset {
-        width: 600px;
-        height: 500px;
         font-size: 20px;
         font-family: 'Roboto', sans-serif;
         color: brown;
@@ -408,8 +406,7 @@ section {
                 padding: 10px;
                 
                 textarea {
-                    width: 450px;
-                    height: 170px;
+                    width: 100%;
                     text-align: left;
                 }
             }
@@ -419,7 +416,7 @@ section {
                 font-family: 'Roboto', sans-serif;
                 color: brown;
                 font-weight: bolder;
-                width: 200px;
+                width: 120px;
             }
             .botones {
                 margin-top: 50px;
@@ -454,16 +451,6 @@ section {
         }
     }
 
-    .index_body {
-        display: grid;
-        grid-template-areas: 
-        "header header "
-        "main main"
-        "main main"
-        "main main"
-        "footer footer ";
-    }
-
     .imagenesMain {
         flex-direction: column;
         a {
@@ -493,14 +480,6 @@ section {
         flex-wrap: wrap;
         justify-content: center;
     }    
-
-    .snbody{
-        display: grid;
-        grid-template-areas: 
-        "snheader  snheader "
-        "snsection  snsection"
-        "snfooter  snfooter";
-        }
      
 
      main div p {
@@ -520,9 +499,12 @@ section {
         } 
     }  
 
-    input[type="submit"],
-    input[type="reset"] {
-        width: 200px;
+    .contenedorMenu{
+        .tituloMenu {
+            h3{
+                font-size: 25px;
+            }
+        }
     }
 
     .contenedorImg{
@@ -532,9 +514,4 @@ section {
              }
 
     } 
-    
-    fieldset {
-        width: 500px;
-        height: 490px;
-    }
 }

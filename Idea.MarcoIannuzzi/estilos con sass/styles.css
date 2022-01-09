@@ -20,7 +20,7 @@ header {
   background: linear-gradient(90deg, #f55e06b2, #8c7756);
   position: fixed;
   top: 0%;
-  width: 100vw;
+  width: 100%;
   border-bottom: 2px solid brown;
   display: -ms-grid;
   display: grid;
@@ -37,8 +37,7 @@ header img {
   width: 65px;
   border: 2px solid rgba(119, 69, 11, 0.808);
   border-radius: 35%;
-  margin: 2px;
-  margin-left: 35px;
+  margin-left: 30px;
 }
 
 header nav ul {
@@ -154,13 +153,14 @@ footer div img {
 
 footer div h5 {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #1f0a01;
   text-shadow: 0px 0px 10px rgba(236, 148, 47, 0.582), 0px 0px 10px rgba(236, 148, 47, 0.582);
 }
 
 footer div p {
   font-weight: bolder;
+  font-size: 12px;
 }
 
 .snbody {
@@ -251,7 +251,7 @@ section iframe:hover {
 
 section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   color: #270e03;
   text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
   font-weight: bolder;
@@ -350,7 +350,7 @@ section .contenedorSobreNosotros {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 500px;
+  width: 450px;
   height: 350px;
 }
 
@@ -380,7 +380,7 @@ section .contenedorSobreNosotros {
 
 .contenedorProductos .imgProductos {
   margin-top: 50px;
-  width: 350px;
+  width: 300px;
   padding: 10px;
   border: 5px inset brown;
   border-radius: 10%;
@@ -512,8 +512,6 @@ section .contenedorSobreNosotros {
 }
 
 .contenedorContactos fieldset {
-  width: 600px;
-  height: 500px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: brown;
@@ -542,8 +540,7 @@ section .contenedorSobreNosotros {
 }
 
 .contenedorContactos fieldset form label textarea {
-  width: 450px;
-  height: 170px;
+  width: 100%;
   text-align: left;
 }
 
@@ -553,7 +550,7 @@ section .contenedorSobreNosotros {
   font-family: 'Roboto', sans-serif;
   color: brown;
   font-weight: bolder;
-  width: 200px;
+  width: 120px;
 }
 
 .contenedorContactos fieldset form .botones {
@@ -580,11 +577,6 @@ section .contenedorSobreNosotros {
   }
   .navitem:hover {
     font-size: 12px;
-  }
-  .index_body {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "header header " "main main" "main main" "main main" "footer footer ";
   }
   .imagenesMain {
     -webkit-box-orient: vertical;
@@ -615,11 +607,6 @@ section .contenedorSobreNosotros {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .snbody {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "snheader  snheader " "snsection  snsection" "snfooter  snfooter";
-  }
   main div p {
     font-size: 18px;
   }
@@ -629,17 +616,12 @@ section .contenedorSobreNosotros {
   .contenedorProductos .tituloYLista li {
     font-size: 10px;
   }
-  input[type="submit"],
-  input[type="reset"] {
-    width: 200px;
+  .contenedorMenu .tituloMenu h3 {
+    font-size: 25px;
   }
   .contenedorImg img {
     width: 300px;
     height: 250px;
-  }
-  fieldset {
-    width: 500px;
-    height: 490px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
