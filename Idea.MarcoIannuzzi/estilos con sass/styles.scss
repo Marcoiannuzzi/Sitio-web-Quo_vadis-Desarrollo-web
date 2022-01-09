@@ -1,4 +1,4 @@
-
+$textshadow: 0px 0px 10px rgba(236, 148, 47, 0.582),0px 0px 10px rgba(236, 148, 47, 0.582) ; 
 
 
 * {
@@ -9,57 +9,57 @@
 
 body {
     background: linear-gradient(90deg, #f55e06b2, #8c6c56 );
-   
-    header {
-        background: linear-gradient(90deg, #f55e06b2, #8c7756 );
-        position: fixed;
-        top: 0%;
-        width: 100vw;
-        border-bottom: 2px solid brown;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        z-index: 1;
-        grid-area: header;
-    }     
-        header img {
-            width: 65px;
-            border: 2px solid rgba(119, 69, 11, 0.808);
-            border-radius: 35%;
-            margin: 2px;
-            margin-left: 35px;
-        }
-
-        nav {
-        margin-right: 20px;
-            ul {
-                display: grid;
-                grid-template-columns: 15% 25% 20% 20% 20%;
-                padding-top: 12px;
-                li {
-                    list-style: none; 
-                    a {
-                        text-decoration: none;
-                        font-size: 16px;
-                        color: black;
-                        font-family: 'Roboto', sans-serif; 
-                        transition: 1s;
-                        &:hover{
-                            color: rgb(104, 24, 24);
-                            font-size: 20px;
-                            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
-                        }
-                    }
-                }
-            }
-        }   
 }
 
-.index_body{
+.index_body {
     display: grid;
     grid-template-areas: 
     "header header header"
     "main    main    main"
     "footer footer footer";
+
+}
+
+header {
+    background: linear-gradient(90deg, #f55e06b2, #8c7756 );
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    border-bottom: 2px solid brown;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    z-index: 1;
+    grid-area: header;
+    img {
+        width: 65px;
+        border: 2px solid rgba(119, 69, 11, 0.808);
+        border-radius: 35%;
+        margin: 2px;
+        margin-left: 35px;
+    }
+
+    nav {
+        ul {
+            display: grid;
+            grid-template-columns: 15% 25% 20% 20% 20%;
+            padding-top: 12px;
+            li {
+                list-style: none; 
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: black;
+                    font-family: 'Roboto', sans-serif; 
+                    transition: 1s;
+                    &:hover {
+                        color: rgb(104, 24, 24);
+                        font-size: 20px;
+                        text-shadow: $textshadow;
+                    }
+                }
+            }
+        }
+    }
 }
 
 main {
@@ -67,57 +67,42 @@ main {
     display: flex;
     flex-direction: column;
     grid-area: main;
-    div.slideFotos{
-        margin: 0 auto;
-        border: 5px inset brown;
-        &:hover{
-            border: 5px inset chocolate;
-        }
-        .carousel{
-            width: 55vw;
-            height: 70vh;
-        }
-        .carousel-item img{
-            width: 55vw;
-            height: 70vh;
-        }
-    }
-    
-    div{
-         h1 {
-        justify-content: center;
-        padding: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 65px;
-        color: rgba(39, 14, 3, 0.87);
-        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
-    }
-         h2 {
-        padding: 20px;
-        margin-bottom: 50px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 45px;
-        font-weight: 500;
-        letter-spacing: 15px;
-        color: rgb(39, 14, 3);
-        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
-    }
-        p {
-        margin-top: 30px;
-        font-family: cursive;
-        padding: 55px;
-        font-size: 25px;
-        letter-spacing: 10px;
-        font-weight: bolder;
-        color: rgba(41, 14, 3, 0.753);
-        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
-    }
-}
-}
 
-.titulosMain {
-    display: flex;
-    flex-direction: column;
+    .titulosMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div {
+        h1 {
+            justify-content: center;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 65px;
+            color: rgba(39, 14, 3, 0.87);
+            text-shadow: $textshadow;
+        }
+        h2 {
+            padding: 20px;
+            margin-bottom: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 45px;
+            font-weight: 500;
+            letter-spacing: 15px;
+            color: rgb(39, 14, 3);
+            text-shadow: $textshadow;
+        }
+        p {
+            margin-top: 30px;
+            font-family: cursive;
+            padding: 55px;
+            font-size: 25px;
+            letter-spacing: 10px;
+            font-weight: bolder;
+            color: rgba(41, 14, 3, 0.753);
+            text-shadow: $textshadow;
+        }
+    }
 }
 
 footer{
@@ -128,32 +113,28 @@ footer{
     padding: 20px;
     margin-top: 30px;
     grid-area: footer;
-    div{
+    div {
         img {
-        border: 2px solid rgb(39, 14, 3);
-        border-radius: 35%;
-        margin: 20px 10px 10px 10px; 
+            border: 2px solid rgb(39, 14, 3);
+            border-radius: 35%;
+            margin: 20px 10px 10px 10px; 
+        
         }
         h5 {
             font-family: 'Roboto', sans-serif; 
             font-size: 20px;
             color: rgb(31, 10, 1);
-            text-shadow: rgba(194, 108, 9, 0.404) 2px 2px;
+            text-shadow: $textshadow;
         }
         p{
             font-weight: bolder;
         }
+
     }
+
 }
 
-.footerText {
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* Hasta este punto esta aplicado CSS al index.html y comparte el mismo formato con el resto de las paginas en cuanto al header, footer y fondo del body.*/
-
-/* estilo de pagina "sobre nosotros"*/
+//comienzo de estilo de sobre nosotros.html
 
 .snbody{
     display: grid;
@@ -161,44 +142,386 @@ footer{
     "snheader snheader snheader "
     "snsection snsection snsection"
     "snfooter snfooter snfooter";
-    .snheader {
-        grid-area: snheader;
+}
 
-    }
+.snheader {
+    grid-area: snheader;
+}
 
-    .snsection {
-        grid-area: snsection;
-        display: flex;
-        flex-direction: column;
+.snsection {
+    grid-area: snsection;
+}
+
+.snfooter {
+    grid-area: snfooter;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    h1 {
+        display: inline-block;
         justify-content: center;
-        padding-top: 90px;
-        h1 {
-            display: inline-block;
-            justify-content: center;
-            padding: 10px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 58px;
-            color: rgba(39, 14, 3, 0.87);
-            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
-            transition: 1s;
-            &:hover{
-                color: rgba(102, 43, 18, 0.945);
-                font-size: 60px;
-            }
-        }
-        iframe {
-            width: 60vw;
-            height: 75vh;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 58px;
+        color: rgba(39, 14, 3, 0.87);
+        text-shadow: $textshadow;
+        transition: 1s;
+        &:hover {
+            font-size: 60px;
+            color: rgba(180, 63, 12, 0.979);
+            text-shadow: 0px 0px 15px rgba(68, 38, 4, 0.87), 0px 0px 15px rgba(68, 38, 4, 0.87);
         }
     }
+    h2 {
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: 15px;
+        color: rgb(39, 14, 3);
+        text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+    }
+    a {
+        text-decoration: none;
+    }
+    iframe {
+        margin: 30px;
+        border: 5px inset brown;
+        width: 60vw;
+        height: 500px;
+        &:hover{
+            border: 5px inset chocolate;
+        }
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        color: rgb(39, 14, 3);
+        text-shadow: rgba(194, 108, 9, 0.404)5px 8px;
+        font-weight: bolder;
+        text-align: justify;
+        margin: 30px;
+        padding: 40px;
+    }
+    .imgSobreNosotros {
 
-    .snfooter {
-        grid-area: snfooter;
-
+        margin: 70px 30px 30px;
+        padding: 20px;
+        border: 5px inset brown;
+        border-radius: 30%;
+        box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
+        &:hover{
+            border: 5px inset chocolate;
+            box-shadow: rgba(194, 108, 9, 0.404)r 3px 3px;
+        }
+    }
+    .contenedorSobreNosotros {
+        display: grid;
+        grid-template-columns: 65% 35%;
     }
 
 }
 
+/* comienzan estilos de "productos"*/
+
+.pbody {
+    display: grid;
+    grid-template-areas: 
+    "pheader pheader pheader"
+    "psection psection psection"
+    "pfooter pfooter pfooter";
+}
+
+.pheader {
+    grid-area: pheader;
+}
+
+.psection {
+    grid-area: psection;
+}
+
+.pfooter {
+    grid-area: pfooter;
+}
+
+.contenedorProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    .tituloYLista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        height: 350px;
+        h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+            color: rgba(77, 27, 6, 0.938);
+            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        li {
+            list-style: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            color: rgb(39, 14, 3);
+            text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
+            font-weight: bolder;
+            padding: 15px;
+            &:hover{
+                font-size: 17px;
+                color: rgb(150, 69, 12);
+            }
+        }
+    }   
+        .imgProductos {
+            width:  380px;
+            height: 300px;
+            padding: 20px;
+            border: 5px inset brown;
+            border-radius: 10%;
+            box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
+            &:hover {
+                border: 5px outset chocolate;
+                border-radius: 10%;
+                box-shadow:rgba(76, 82, 3, 0.349) 3px 3px;
+            }
+        }
+}
+
+//estilos de menu
+
+.mbody {
+    display: grid;
+    grid-template-areas:
+    "mheader mheader mheader"
+    "msection msection msection"
+    "mfooter mfooter mfooter";
+}
+
+.mheader{
+    grid-area: mheader;
+}
+
+.msection {
+    grid-area: msection;
+}
+
+.mfooter {
+    grid-area: mfooter;
+}
+
+.contenedorMenu {
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 40vw;
+        border: 5px inset brown;
+    }
+    .tituloMenu {
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        h3 {
+            margin-top: 20px;
+            font-size: 55px;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(77, 27, 6, 0.938);
+            text-shadow: rgba(182, 73, 11, 0.185) 5px 8px;
+            font-weight: bolder;
+        }
+        img {
+            width: 65px;
+            height: 55px;
+            border: 2px solid chocolate;
+            border-radius: 35%;
+            margin-top: 25px;
+            margin-right: 35px;
+        }
+    }
+}
+
+.contenedorImgMenu {
+    margin: 10px;
+}
+
+/* Fin de estilos de "el menu" comienzo de "Contactos"*/
+
+.cbody {
+    display: grid;
+    grid-template-areas:
+    "cheader cheader cheader"
+    "csection csection csection"
+    "cfooter cfooter cfooter";
+}
+
+.cheader {
+    grid-area: cheader;
+}
+
+.csection {
+    grid-area: csection;
+}
+
+.cfooter {
+    grid-area: cfooter;
+}
+
+.contenedorContactos {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    fieldset {
+        width: 600px;
+        height: 500px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: brown;
+        font-weight: bolder;
+        form {
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0px;
+                padding: 10px;
+                text-align: center;
+            }
+            label {
+                margin-top: 10px;
+                padding: 10px;
+                
+                textarea {
+                    width: 450px;
+                    height: 170px;
+                    text-align: left;
+                }
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                font-size: 12px;
+                font-family: 'Roboto', sans-serif;
+                color: brown;
+                font-weight: bolder;
+                width: 200px;
+            }
+            .botones {
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
+
+[type="text"] {
+    text-align: left;
+}
 
 
+@media  screen and (max-width: 850px) {
 
+    body{
+        background: none;
+        background-color: rgba(165, 72, 11, 0.747);
+    }
+
+    header {
+        background: none;
+        background-color: rgba(173, 86, 14, 0.747);
+        grid-template-columns: 30% 70%;
+    }
+
+    .navitem {
+        font-size: 10px;
+        &:hover{
+            font-size: 12px;
+        }
+    }
+
+    .index_body {
+        display: grid;
+        grid-template-areas: 
+        "header header "
+        "main main"
+        "main main"
+        "main main"
+        "footer footer ";
+    }
+
+    .imagenesMain {
+        flex-direction: column;
+        a {
+            margin: 15px;
+        }
+     }
+
+    section {
+        h1 {
+            font-size: 45px;
+                
+            }
+        h2{
+            font-size: 25px;
+        }       
+
+        iframe {
+            width: 50%;
+            height: 300px
+        }
+        p{
+            font-size: 14px;
+        }
+
+    }
+
+    .contenedorSobreNosotros {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+    .imgSobreNosotros{
+        width: 150px;
+    }
+        
+    
+
+    .snbody{
+        display: grid;
+        grid-template-areas: 
+        "snheader  snheader "
+        "snsection  snsection"
+        "snfooter  snfooter";
+        }
+     
+
+     main div p {
+        font-size: 18px;
+    }
+
+    .contenedorSobreNosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 200px;
+    }
+
+    .contenedorImg img{
+        width:  300px;
+        height: 250px;
+    }
+    
+    fieldset {
+        width: 500px;
+        height: 490px;
+    }
+}
