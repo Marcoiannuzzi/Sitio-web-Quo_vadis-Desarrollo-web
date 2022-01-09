@@ -166,27 +166,27 @@ footer div p {
 .snbody {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "snheader snheader snheader " "snsection snsection snsection" "snfooter snfooter snfooter";
+      grid-template-areas: "snheader snheader " "snsection snsection" "snfooter snfooter ";
 }
 
 .snheader {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: snheader;
 }
 
 .snsection {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: snsection;
 }
 
 .snfooter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: snfooter;
 }
 
@@ -286,27 +286,27 @@ section .contenedorSobreNosotros {
 .pbody {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "pheader pheader pheader" "psection psection psection" "pfooter pfooter pfooter";
+      grid-template-areas: "pheader pheader" "psection psection" "pfooter pfooter";
 }
 
 .pheader {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: pheader;
 }
 
 .psection {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: psection;
 }
 
 .pfooter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: pfooter;
 }
 
@@ -384,27 +384,27 @@ section .contenedorSobreNosotros {
 .mbody {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "mheader mheader mheader" "msection msection msection" "mfooter mfooter mfooter";
+      grid-template-areas: "mheader mheader" "msection msection" "mfooter mfooter";
 }
 
 .mheader {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: mheader;
 }
 
 .msection {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: msection;
 }
 
 .mfooter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: mfooter;
 }
 
