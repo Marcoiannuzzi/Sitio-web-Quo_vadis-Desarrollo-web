@@ -276,10 +276,13 @@ section .imgSobreNosotros:hover {
 }
 
 section .contenedorSobreNosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 65% 35%;
-      grid-template-columns: 65% 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /* comienzan estilos de "productos"*/
@@ -310,6 +313,17 @@ section .contenedorSobreNosotros {
   grid-area: pfooter;
 }
 
+.psection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
 .contenedorProductos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,11 +332,11 @@ section .contenedorSobreNosotros {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  margin: 50px;
 }
 
 .contenedorProductos .tituloYLista {
@@ -366,7 +380,7 @@ section .contenedorSobreNosotros {
 
 .contenedorProductos .imgProductos {
   margin-top: 50px;
-  width: 30vw;
+  width: 350px;
   padding: 10px;
   border: 5px inset brown;
   border-radius: 10%;
@@ -595,13 +609,11 @@ section .contenedorSobreNosotros {
     font-size: 14px;
   }
   .contenedorSobreNosotros {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 80% 20%;
-        grid-template-columns: 80% 20%;
-  }
-  .imgSobreNosotros {
-    width: 150px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .snbody {
     display: -ms-grid;
@@ -616,15 +628,6 @@ section .contenedorSobreNosotros {
   }
   .contenedorProductos .tituloYLista li {
     font-size: 10px;
-  }
-  .contenedorSobreNosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   input[type="submit"],
   input[type="reset"] {

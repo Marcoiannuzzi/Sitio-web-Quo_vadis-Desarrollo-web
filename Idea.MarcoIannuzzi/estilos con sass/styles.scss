@@ -208,7 +208,6 @@ section {
         padding: 40px;
     }
     .imgSobreNosotros {
-
         margin: 70px 30px 30px;
         padding: 20px;
         border: 5px inset brown;
@@ -219,10 +218,14 @@ section {
             box-shadow: rgba(194, 108, 9, 0.404)r 3px 3px;
         }
     }
+
     .contenedorSobreNosotros {
-        display: grid;
-        grid-template-columns: 65% 35%;
+        display: flex;
+        flex-direction: row;
+    
     }
+
+
 
 }
 
@@ -248,12 +251,17 @@ section {
     grid-area: pfooter;
 }
 
+.psection {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
 .contenedorProductos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100vw;
-    margin: 50px;
     .tituloYLista {
         display: flex;
         flex-direction: column;
@@ -284,7 +292,7 @@ section {
     }   
         .imgProductos {
             margin-top: 50px;
-            width: 30vw;
+            width: 350px;
             padding: 10px;
             border: 5px inset brown;
             border-radius: 10%;
@@ -481,17 +489,10 @@ section {
         }
 
     }
-
-    .contenedorSobreNosotros {
-        display: grid;
-        grid-template-columns: 80% 20%;
-    }
-
-    .imgSobreNosotros{
-        width: 150px;
-    }
-        
-    
+    .contenedorSobreNosotros{
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
 
     .snbody{
         display: grid;
@@ -518,11 +519,6 @@ section {
             }
         } 
     }  
-
-    .contenedorSobreNosotros {
-        display: flex;
-        flex-direction: column;
-    }
 
     input[type="submit"],
     input[type="reset"] {
