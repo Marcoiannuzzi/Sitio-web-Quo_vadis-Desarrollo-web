@@ -321,6 +321,7 @@ section .contenedorSobreNosotros {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100vw;
   margin: 50px;
 }
 
@@ -364,9 +365,9 @@ section .contenedorSobreNosotros {
 }
 
 .contenedorProductos .imgProductos {
-  width: 380px;
-  height: 300px;
-  padding: 20px;
+  margin-top: 50px;
+  width: 30vw;
+  padding: 10px;
   border: 5px inset brown;
   border-radius: 10%;
   -webkit-box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
@@ -610,6 +611,12 @@ section .contenedorSobreNosotros {
   main div p {
     font-size: 18px;
   }
+  .contenedorProductos .tituloYLista h3 {
+    font-size: 20px;
+  }
+  .contenedorProductos .tituloYLista li {
+    font-size: 10px;
+  }
   .contenedorSobreNosotros {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -618,12 +625,6 @@ section .contenedorSobreNosotros {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .tituloYLista h3 {
-    font-size: 25px;
-  }
-  .tituloYLista li {
-    font-size: 15px;
   }
   input[type="submit"],
   input[type="reset"] {

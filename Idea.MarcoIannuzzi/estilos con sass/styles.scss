@@ -252,6 +252,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100vw;
     margin: 50px;
     .tituloYLista {
         display: flex;
@@ -282,9 +283,9 @@ section {
         }
     }   
         .imgProductos {
-            width:  380px;
-            height: 300px;
-            padding: 20px;
+            margin-top: 50px;
+            width: 30vw;
+            padding: 10px;
             border: 5px inset brown;
             border-radius: 10%;
             box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
@@ -504,6 +505,19 @@ section {
      main div p {
         font-size: 18px;
     }
+
+    .contenedorProductos {
+        
+        .tituloYLista {
+            
+            h3{
+                font-size: 20px;
+            }
+            li {
+                font-size: 10px;
+            }
+        } 
+    }  
 
     .contenedorSobreNosotros {
         display: flex;
