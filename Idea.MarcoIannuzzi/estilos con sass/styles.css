@@ -22,10 +22,16 @@ header {
   top: 0%;
   width: 100%;
   border-bottom: 2px solid brown;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -35,17 +41,10 @@ header {
 
 header img {
   width: 65px;
+  height: 55px;
   border: 2px solid rgba(119, 69, 11, 0.808);
   border-radius: 35%;
   margin-left: 30px;
-}
-
-header nav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 15% 25% 20% 20% 20%;
-      grid-template-columns: 15% 25% 20% 20% 20%;
-  padding-top: 12px;
 }
 
 header nav ul li {
@@ -56,7 +55,7 @@ header nav ul li a {
   text-decoration: none;
   font-size: 16px;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -97,7 +96,7 @@ main div h1 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 65px;
   color: rgba(39, 14, 3, 0.87);
   text-shadow: 0px 0px 10px rgba(236, 148, 47, 0.582), 0px 0px 10px rgba(236, 148, 47, 0.582);
@@ -106,7 +105,7 @@ main div h1 {
 main div h2 {
   padding: 20px;
   margin-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 500;
   letter-spacing: 15px;
@@ -152,7 +151,7 @@ footer div img {
 }
 
 footer div h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #1f0a01;
   text-shadow: 0px 0px 10px rgba(236, 148, 47, 0.582), 0px 0px 10px rgba(236, 148, 47, 0.582);
@@ -210,7 +209,7 @@ section h1 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 58px;
   color: rgba(39, 14, 3, 0.87);
   text-shadow: 0px 0px 10px rgba(236, 148, 47, 0.582), 0px 0px 10px rgba(236, 148, 47, 0.582);
@@ -226,7 +225,7 @@ section h1:hover {
 
 section h2 {
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 500;
   letter-spacing: 15px;
@@ -241,7 +240,7 @@ section a {
 section iframe {
   margin: 30px;
   border: 5px inset brown;
-  width: 60vw;
+  width: 70vw;
   height: 500px;
 }
 
@@ -267,6 +266,7 @@ section .imgSobreNosotros {
   border-radius: 30%;
   -webkit-box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
           box-shadow: rgba(163, 55, 23, 0.548) 3px 3px;
+  width: 250px;
 }
 
 section .imgSobreNosotros:hover {
@@ -283,6 +283,9 @@ section .contenedorSobreNosotros {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* comienzan estilos de "productos"*/
@@ -334,9 +337,9 @@ section .contenedorSobreNosotros {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contenedorProductos .tituloYLista {
@@ -350,8 +353,6 @@ section .contenedorSobreNosotros {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
-  height: 350px;
 }
 
 .contenedorProductos .tituloYLista h3 {
@@ -361,6 +362,10 @@ section .contenedorSobreNosotros {
   text-shadow: rgba(194, 108, 9, 0.404) 5px 8px;
   font-weight: bolder;
   padding: 20px;
+}
+
+.contenedorProductos .tituloYLista p {
+  margin-top: 0px;
 }
 
 .contenedorProductos .tituloYLista li {
@@ -453,8 +458,8 @@ section .contenedorSobreNosotros {
 
 .contenedorMenu .tituloMenu h3 {
   margin-top: 20px;
-  font-size: 55px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
   color: rgba(77, 27, 6, 0.938);
   text-shadow: rgba(182, 73, 11, 0.185) 5px 8px;
   font-weight: bolder;
@@ -467,6 +472,12 @@ section .contenedorSobreNosotros {
   border-radius: 35%;
   margin-top: 25px;
   margin-right: 35px;
+}
+
+.pcarousel {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px brown;
 }
 
 .contenedorImgMenu {
@@ -512,10 +523,11 @@ section .contenedorSobreNosotros {
 }
 
 .contenedorContactos fieldset {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
   color: brown;
   font-weight: bolder;
+  width: 70%;
 }
 
 .contenedorContactos fieldset form {
@@ -547,7 +559,7 @@ section .contenedorSobreNosotros {
 .contenedorContactos fieldset form input[type="submit"],
 .contenedorContactos fieldset form input[type="reset"] {
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: brown;
   font-weight: bolder;
   width: 120px;
@@ -568,15 +580,12 @@ section .contenedorSobreNosotros {
   }
   header {
     background: none;
-    background-color: rgba(173, 86, 14, 0.747);
+    background-color: #ad560e;
     -ms-grid-columns: 30% 70%;
         grid-template-columns: 30% 70%;
   }
-  .navitem {
-    font-size: 10px;
-  }
-  .navitem:hover {
-    font-size: 12px;
+  .titulosMain h2 {
+    font-size: 25px;
   }
   .imagenesMain {
     -webkit-box-orient: vertical;
@@ -594,7 +603,7 @@ section .contenedorSobreNosotros {
     font-size: 25px;
   }
   section iframe {
-    width: 50%;
+    width: 85%;
     height: 300px;
   }
   section p {
@@ -610,11 +619,23 @@ section .contenedorSobreNosotros {
   main div p {
     font-size: 18px;
   }
+  .contenedorProductos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .contenedorProductos .tituloYLista h3 {
     font-size: 20px;
   }
   .contenedorProductos .tituloYLista li {
     font-size: 10px;
+  }
+  .medio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .contenedorMenu .tituloMenu h3 {
     font-size: 25px;
